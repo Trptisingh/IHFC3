@@ -1,8 +1,3 @@
-
-**Using `<script>` Tag in `<head>` and `<body>`** — ready to include in any web project or upload to GitHub:
-
----
-
 # 🧠 Using `<script>` Tag in `<head>` and `<body>` — Complete Guide
 
 This guide explains how the **`<script>` tag** works when placed inside the `<head>` and `<body>` sections of an HTML document.
@@ -125,4 +120,5 @@ This ensures:
 * All HTML elements are available when the script runs
 * Faster initial page rendering
 * Fewer loading issues
+
 
