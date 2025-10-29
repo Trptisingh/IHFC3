@@ -1,4 +1,4 @@
-# 💪 CSS `display: flex` — Complete Guide
+# CSS `display: flex` — Complete Guide
 
 The **`display: flex`** property in CSS enables a **flexible box layout**, making it easier to align, space, and distribute elements inside a container.  
 It helps create responsive layouts without using floats or positioning.
@@ -15,3 +15,4 @@ Example:
 .container {
   display: flex;
 }
+
