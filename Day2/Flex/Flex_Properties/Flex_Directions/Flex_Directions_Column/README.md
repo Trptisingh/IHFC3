@@ -1,10 +1,3 @@
-**`flex-direction: column`**, perfectly formatted and easy to paste directly 👇
-
----
-
-## 🧾 **README — flex-direction: column**
-
-````markdown
 # ⬇️ CSS `flex-direction: column`
 
 The **`flex-direction: column`** property arranges flex items **vertically** — from **top to bottom** — inside a flex container.
@@ -59,8 +52,5 @@ its child elements stack **one below the other** instead of side by side.
 * `flex-direction: column` places items **vertically**.
 * The **main axis** becomes **vertical** (top → bottom).
 * Useful for creating **stacked layouts** like sidebars, menus, or lists.
-
-```
-
 
 ```
