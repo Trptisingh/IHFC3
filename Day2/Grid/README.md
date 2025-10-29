@@ -1,36 +1,48 @@
-# 🧩 CSS Grid — `grid-template-columns` and `grid-template-rows`
+# CSS Grid — `grid-template-columns` and `grid-template-rows`
 
-The **CSS Grid Layout** provides a powerful way to arrange elements in rows and columns.  
-It’s ideal for building two-dimensional layouts (both horizontal and vertical).
+The **CSS Grid Layout** provides a powerful way to arrange elements in rows and columns.
+It’s ideal for building **two-dimensional layouts** (both horizontal and vertical).
 
 ---
 
-## 🧠 What These Properties Do
+## What These Properties Do
 
 ### `display: grid`
-Turns a container into a **grid layout**. Its child elements become **grid items**.
+
+Turns a container into a **grid layout**.
+All its child elements become **grid items**.
 
 ### `grid-template-columns`
+
 Defines how many **columns** the grid will have and their **width**.
 
-Example:
+**Example:**
+
 ```css
 grid-template-columns: 150px 150px 150px;
-➡ This creates 3 columns, each 150px wide.
+```
 
-grid-template-rows
-Defines how many rows the grid will have and their height.
+This creates **3 columns**, each **150px wide**.
 
-Example:
+### `grid-template-rows`
 
-css
-Copy code
+Defines how many **rows** the grid will have and their **height**.
+
+**Example:**
+
+```css
 grid-template-rows: 100px 100px;
-➡ This creates 2 rows, each 100px tall.
+```
 
-🧩 Example
-html
-Copy code
+This creates **2 rows**, each **100px tall**.
+
+---
+
+## Example
+
+**HTML**
+
+```html
 <div class="container">
   <div class="box1">Box 1</div>
   <div class="box2">Box 2</div>
@@ -39,32 +51,47 @@ Copy code
   <div class="box5">Box 5</div>
   <div class="box6">Box 6</div>
 </div>
-css
-Copy code
+```
+
+**CSS**
+
+```css
 .container {
   display: grid;
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 100px 100px;
 }
-This creates a 3×2 grid (3 columns, 2 rows) that automatically places each box in a grid cell.
+```
 
-🎨 Visual Layout
-diff
-Copy code
+This creates a **3×2 grid** — 3 columns and 2 rows —
+automatically placing each box in one grid cell.
+
+---
+
+## Visual Layout
+
+```
 +--------------------------------------------+
 | Box1 | Box2 | Box3 |
 | Box4 | Box5 | Box6 |
 +--------------------------------------------+
-3 columns × 2 rows grid
+```
 
-Each cell fits one grid item
+* 3 columns × 2 rows grid
+* Each cell fits one grid item
+* Gaps and padding can be added for spacing clarity
 
-Gaps and padding make spacing clearer
+---
 
-💡 Summary
-Property	Purpose	Example	Description
-display: grid	Turns element into grid container	—	Makes child elements grid items
-grid-template-columns	Defines columns	150px 150px 150px	3 columns, each 150px
-grid-template-rows	Defines rows	100px 100px	2 rows, each 100px
+## Summary
 
-✅ Use Case: Perfect for creating dashboards, galleries, or layout sections where elements need both row and column structure.
+| Property                | Purpose                                | Example             | Description                         |
+| ----------------------- | -------------------------------------- | ------------------- | ----------------------------------- |
+| `display: grid`         | Turns an element into a grid container | —                   | Makes all child elements grid items |
+| `grid-template-columns` | Defines columns                        | `150px 150px 150px` | 3 columns, each 150px wide          |
+| `grid-template-rows`    | Defines rows                           | `100px 100px`       | 2 rows, each 100px tall             |
+
+---
+
+**Use Case:**
+Ideal for **dashboards**, **photo galleries**, or **structured layouts** that need both row and column control.
