@@ -1,30 +1,37 @@
-# 📱 CSS Media Queries — Desktop, Tablet, and Mobile
+# 📱 **CSS Media Queries — Desktop, Tablet, and Mobile**
 
-**Media Queries** in CSS allow you to make your website responsive — meaning it adjusts its layout and style based on the **device screen size**.
-
-This example demonstrates how the layout changes for:
-- **Mobile phones**
-- **Tablets**
-- **Desktops**
+**Media Queries** in CSS make your website **responsive** — adapting the layout and style based on the **device screen size**.
+This ensures your webpage looks great on **mobiles, tablets, and desktops**.
 
 ---
 
-## 🧠 What Are Media Queries?
+## 🧠 **What Are Media Queries?**
 
-A **media query** checks for specific conditions (like screen width) and applies CSS only when those conditions are true.
+A **media query** applies specific CSS rules only when certain conditions (like screen width) are met.
+This allows developers to create designs that automatically adjust for different devices.
 
-### Basic Syntax:
+---
+
+### ✅ **Basic Syntax**
+
 ```css
 @media (condition) {
   /* CSS rules here */
 }
-🧩 Example Code
-css
-Copy code
+```
+
+---
+
+## 🧩 **Example Code**
+
+Here’s how to change the layout for **mobile**, **tablet**, and **desktop** screens.
+
+```css
 /* Mobile (max-width: 600px) */
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
+    background-color: peachpuff;
   }
 }
 
@@ -32,6 +39,7 @@ Copy code
 @media (min-width: 601px) and (max-width: 992px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
+    background-color: lightgoldenrodyellow;
   }
 }
 
@@ -39,38 +47,58 @@ Copy code
 @media (min-width: 993px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
   }
 }
-🎨 Layout Behavior
-Device	Screen Width	Layout	Background
-📱 Mobile	≤ 600px	1 column	Peachpuff
-💻 Tablet	601–992px	2 columns	Light Goldenrod
-🖥️ Desktop	≥ 993px	3 columns	Light Gray
+```
 
-🧩 Visual Representation
-Mobile (1 Column):
+---
 
-csharp
-Copy code
+## 🎨 **Layout Behavior**
+
+| Device          | Screen Width  | Layout    | Background      |
+| --------------- | ------------- | --------- | --------------- |
+| 📱 **Mobile**   | ≤ 600px       | 1 column  | Peachpuff       |
+| 💻 **Tablet**   | 601px – 992px | 2 columns | Light Goldenrod |
+| 🖥️ **Desktop** | ≥ 993px       | 3 columns | Light Gray      |
+
+---
+
+## 🧩 **Visual Representation**
+
+### 📱 Mobile (1 Column)
+
+```
 [Box 1]
 [Box 2]
 [Box 3]
-Tablet (2 Columns):
+```
 
-css
-Copy code
+### 💻 Tablet (2 Columns)
+
+```
 [Box 1] [Box 2]
 [Box 3]
-Desktop (3 Columns):
+```
 
-css
-Copy code
+### 🖥️ Desktop (3 Columns)
+
+```
 [Box 1] [Box 2] [Box 3]
-💡 Summary
-Concept	Description
-@media	Defines conditions for applying specific styles
-max-width	Applies styles up to a certain screen width
-min-width	Applies styles above a certain screen width
-Responsive Design	Ensures your layout adapts to different devices
+```
 
-✅ Tip: Always test your layout using browser developer tools (mobile/tablet/desktop view) to ensure responsiveness.
+---
+
+## 💡 **Summary**
+
+| Concept               | Description                                         |
+| --------------------- | --------------------------------------------------- |
+| `@media`              | Defines screen-based conditions for applying styles |
+| `max-width`           | Applies styles **up to** a specific width           |
+| `min-width`           | Applies styles **above** a specific width           |
+| **Responsive Design** | Ensures layout adapts to all screen sizes           |
+
+---
+
+✅ **Pro Tip:**
+Use your browser’s **Developer Tools → Toggle Device Toolbar** (Ctrl + Shift + M) to test mobile, tablet, and desktop responsiveness in real-time.
