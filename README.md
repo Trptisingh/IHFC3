@@ -130,9 +130,11 @@ By the end of this bootcamp, learners were able to:
 
 ## 👨‍🏫 Facilitator
 
-**Session conducted by:** [Tripti Singh]
-**Organized by:** IHFC × Kendriya Vidyalaya Sangathan
-**Duration:** 4 Days | Advanced Web Development Bootcamp
+* **Session Conducted by:** Tripti Singh
+* **Organized by:** IHFC × Kendriya Vidyalaya Sangathan
+* **Duration:** 4 Days
+* **Program Title:** Advanced Web Development Bootcamp
+* **GitHub:** [https://github.com/Trptisingh](https://github.com/Trptisingh?tab=repositories)
 
 ---
 
